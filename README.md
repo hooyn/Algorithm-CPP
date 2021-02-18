@@ -1,2 +1,2 @@
 # c_plusplus_Class
-hihi my name is hoyun
+c++하이킹 객체지향과 만나는 여행
