@@ -58,7 +58,7 @@ void main()
 	cout << "\n " << man.name << "\t " << man.job << "\t " << man.tel << "\t " << man.email;
 	cout << "\n =====================================";
 	cout << "\n sizeof(namecard) => " << sizeof(namecard);
-	cout << "\t 구조체 변수의 메모리 사이즈 => " << sizeof(namecard) << "\n";*/
+	cout << "\t 구조체 변수의 메모리 사이즈 => " << sizeof(namecard) << "\n";
 	//구조체 활용해서 이름,직업,연락처,이메일 출력
 
 	namecard x = { "김주현", "MCSE전문강사", "418-9876", "freentour@naver.com" };
@@ -194,7 +194,7 @@ public :
 Complex::Complex(int r, int i) //생성자 생성
 {
 	real = r;
-	imamge = i;
+	image = i;
 }
 Complex::~Complex() //소멸자는 ~를 붙여주면 되고 명시해주지 않을 시 아무 작업도 하지 않는다.
 {

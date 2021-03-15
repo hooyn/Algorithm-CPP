@@ -19,16 +19,16 @@ public:
 	b = new_B;
 	c = 0;
 }*/
-Calc::Calc(int new_A, int new_B)
-{
-	a = new_A;
-	b = new_B;
-	c = 0;
-}
 Calc::Calc() //기본생성자 명시
 {
 	a = 0;
 	b = 0;
+	c = 0;
+}
+Calc::Calc(int new_A, int new_B)
+{
+	a = new_A;
+	b = new_B;
 	c = 0;
 }
 void Calc::Prn()
