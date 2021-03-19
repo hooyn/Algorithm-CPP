@@ -21,10 +21,10 @@ string solution(int a, int b) {
     vector<string> ans;
     ans.clear();
     while(getline(ss, stringBuffer, ' ')){
-        ans.push_back(stringBuffer);
+        ans.push_back(stringBuffer); //ans에 ss에 있는 요일들을 저장
     }
-    a--;
-    while(a!=0)
+    a--; // 예를 들어 1월 2일 인 경우 while문에서 0보다 작은 수로 인식
+    while(a!=0) // 지금 생각해보니 a!=1을 하고 위에 a--코드를 지우고 if문에 1월에 해당하는 내용을 지우는 것도 좋을 듯
     {
         if(a==2)
         {
