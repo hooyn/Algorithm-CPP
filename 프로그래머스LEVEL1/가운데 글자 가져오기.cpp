@@ -13,15 +13,15 @@ using namespace std;
 string solution(string s) {
     string answer = "";
     int size = s.size();
-    if(size%2==0)
+    if(size%2==0) // 길이가 짝수일 때
     {
-        int i = size/2;
-        answer=s.at(i-1);
+        int i = size/2; //ex 4/2=2 index[0,1,2,3] 가운데 두글자의 index는 i-1과 i이다.
+        answer=s.at(i-1); 
         answer.push_back(s.at(i));
     }
-    else
+    else //길이가 홀수일 때
     {
-        int i = size/2;
+        int i = size/2; 
         answer=s.at(i);
     }
     return answer;
