@@ -59,10 +59,12 @@ int solution(int n) {
         n=n/3;
     }
     reverse(array.begin(), array.end()); //10진수로 바꾸기 쉽게 하기 위해 반대로 정렬
+    //reverse() array를 반대로 정렬
 
     for(int i = 0 ; i < array.size() ; i++)
     {
         answer = answer + array[i]*pow(3,i); //첫번째 부터 10진수로 바꾸고 answer에 저장
+        //pow(x,n) x^n +cmath헤더 필요
     }
     return answer;
 }
