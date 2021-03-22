@@ -20,16 +20,16 @@ vector<int> solution(vector<int> arr, int divisor) {
     int count=0;
     for(int i =0 ;i<arr.size();i++)
     {
-        if(arr[i]%divisor==0)
+        if(arr[i]%divisor==0) //arr[i]의 수가 divisor로 나누어 떨어진다면
         {
-            answer.push_back(arr[i]);
-            count++;
+            answer.push_back(arr[i]); //answer vector에 push!!
+            count++; //count 증가
         }
     }
     sort(answer.begin(),answer.end());
-    if(count==0)
-        answer.push_back(-1);
-    return answer;
+    if(count==0) // answer에 포함된 수가 없다면
+        answer.push_back(-1); //-1을 answer에 push하고 
+    return answer; //answer return
 }
 /*
 정확성  테스트
