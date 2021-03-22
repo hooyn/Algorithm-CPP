@@ -24,7 +24,8 @@ vector<int> solution(vector<int> arr)
     answer.erase(unique(answer.begin(),answer.end()),answer.end());
     //unique함수는 순서대로 중복된 모든 수값을 맨 뒤로
     //unique함수의 return은 중복된 모든 값을 뒤로 이동시키고 
-    //그 값들의 첫번째 index를 반환한다.
+    //unique함수 반환 값은 쓰레기 값들의 첫번째 index를 반환한다.
+    //unique가 맨 뒤로 보낸 값들의 첫번째 index부터 answer의 맨뒤 index까지 삭제
     return answer;
 }
 /*
